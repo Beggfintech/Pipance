@@ -9,7 +9,7 @@ export async function POST(req: Request, res: NextApiResponse) {
             
             // Validate input
             if (!fullname || !email || !username || !password) {
-                return res.status(400).json({ message: 'Missing required fields' });
+                return res.status(400).json({ message: 'Missing required fields' });  
             }
 
             // Check if user already exists
